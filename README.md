@@ -1,23 +1,47 @@
-# Python Hello
+# Todo List CLI in Python
 
-The most basic boilerplate to start a Python project at 4Geeks is to start your very first Python project from scratch.
+A lightweight command-line task tracker for a small logistics company's internal operations team. Coordinators use it to manage pending follow-ups between shifts. Tasks are kept in memory during a session and can be saved to a local CSV file and reloaded later.
 
-## What to do next?
+## Source references
 
-Open the `main.py` file and start writing your code.
+This project follows three source files in `docs/`:
 
-Execute your code by typing the following command on your terminal:
+- **`Challenge.txt`** — business context and functional brief
+- **`need.png`** — implementation checklist and standard-library-only constraint
+- **`evaluate.png`** — evaluator rubric and required function behavior
+
+## Features
+
+- Add task
+- List tasks with numeric positions
+- Delete task by position
+- Save to `todos.csv`
+- Load from `todos.csv`
+
+## Out of scope
+
+- No task editing or update-in-place (delete and recreate instead)
+
+## How to run
 
 ```bash
-$ python main.py
+python todo.py
 ```
 
-You can create and include as many python files (a.k.a. modules) as you want using the import statements.
+## How to test
 
-## Requirements
+```bash
+python -m py_compile todo.py test_todo.py
+python -m unittest -v
+```
 
-Make sure you have Python installed in your computer. We strongly recommend [installing Python through Pyenv ](https://4geeks.com/how-to/what-is-pyenv-and-how-to-install-pyenv) to avoid version conflicts in the future.
+## CSV format
 
-### Contributors
+```csv
+title
+Example task
+```
 
-This template was built as part of the [4Geeks Python Resources](https://4geeks.com/technology/python) for learning at [4Geeks.com](https://4geeks.com) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/python-hello/graphs/contributors).
+## Dependencies
+
+No external packages are required. The app uses only the Python standard library.

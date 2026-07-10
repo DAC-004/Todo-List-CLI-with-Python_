@@ -1,0 +1,17 @@
+Todo List CLI in Python
+🎯 Challenge
+You have joined the internal tools team at a small logistics company. Operations coordinators currently track pending tasks in chat messages and sticky notes, and they keep losing important follow-ups between shifts. Your product manager asked for a lightweight command-line tool that any team member can run quickly in the terminal to manage daily tasks.
+
+The tool should let coordinators register new tasks as they come in, review the full list at any time, and remove completed tasks by selecting their list position. Since teams may close and reopen terminals throughout the day, they also need to store tasks in a local file and reload them later without losing progress.
+
+Your product manager shared this functional brief:
+
+Required behavior
+Add one new task by title
+Display all pending tasks with their numeric position
+Delete one task by its position in the list
+Save tasks into a todos.csv file
+Load tasks back from todos.csv
+No task editing flow is needed for this version; users should delete and recreate tasks instead
+Build the first usable version so the operations team can test it this week.
+
